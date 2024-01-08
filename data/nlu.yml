@@ -1,0 +1,184 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: donner_formation
+  examples: |
+    - Quels sont les cours pour la formation [informatique](formation)?
+    - Donne-moi les cours de la formation [ia](formation).
+    - Montre-moi les cours dans la formation [reseaux](formation).
+    - Y a-t-il des cours prévus pour la formation [informatique].
+    
+- intent: ask_room_availability
+  examples: |
+    - Est-ce que la salle [Amphi Ada](room) est disponible ?
+    - Pouvez-vous vérifier la disponibilité de  [Amphi Blaise](room) ?
+    - La salle [C21](room) est-elle libre ?
+    - La salle [C122](room) est-elle disponible ?
+
+
+- intent: ask_room_availability_date
+  examples: |
+    - Est-ce que la salle [Amphi Ada](room) est disponible le [2023-12-21](date) à [09:00](time) ?
+    - Pouvez-vous vérifier la disponibilité de la [Amphi Blaise](room) le [2023-12-21](date) à [10:00](time) ?
+    - La salle [C21](room) est-elle libre le [2023-12-21](date) à [11:00](time) ?
+    - La salle [C122](room) sera-t-elle libre le [2023-12-21](date) à [14:00](time) ?
+
+- intent: ask_weather
+  examples: |
+    - Quel temps fait-il à [Paris](city) [aujourd'hui](times) ?
+    - Peux-tu me donner la météo pour [Berlin](city) [demain](times) ?
+    - Comment est le temps à [New York](city) [ce soir](times) ?
+    - Donne-moi la météo à [Tokyo](city) [demain matin](times).
+    - Quelle est la météo prévue pour [Londres](city) [cet après-midi](times) ?
+    - Quelle est la météo à [Avignon](city) ?
+    - Comment est le temps à [Marseille](city) aujourd'hui ?
+    - Peux-tu me donner la météo pour [Lyon](city) ?
+    - Donne-moi la météo à [Bordeaux](city).
+    - Quel temps fait-il à [Rome](city) [en ce moment](times) ?
+    - Peux-tu me donner la météo pour [Madrid](city) [ce week-end](times) ?
+    - Comment sera le temps à [Amsterdam](city) [demain après-midi](times) ?
+    - J'aimerais connaître la météo à [Bruxelles](city) [ce matin](times).
+    - Quelles sont les prévisions météo pour [Dublin](city) [cette nuit](times) ?
+    - Est-ce qu'il va pleuvoir à [Copenhague](city) [aujourd'hui](times) ?
+    - Donne-moi les prévisions pour [Lisbonne](city) [demain soir](times).
+    - Peux-tu vérifier le temps à [Kenitra](city) pour [l'après-midi](times) ?
+    - Quelle est la température actuelle à [Zurich](city) ?
+    - Y aura-t-il du soleil à [Oslo](city) [ce matin](times) ?
+    - Peux-tu me dire s'il fera chaud à [Stockholm](city) [demain](times) ?
+    - Est-ce que le temps sera clair à [Rabat](city) [en fin de journée](times) ?
+    - Quelle est la météo à [Montpellier](city) pour [les prochaines 24 heures](times) ?
+    - Peux-tu me donner les conditions météorologiques à [Budapest](city) pour [la journée](times) ?
+    - J'aurais besoin de connaître le temps qu'il fera à [Casablanca ](city) [ce soir](times).
+
+- intent: tell_joke
+  examples: |
+    - raconte-moi une blague
+    - fais-moi rire
+    - peux-tu me dire une blague
+    - j'aimerais entendre une blague
+
+- intent: joke_not_funny
+  examples: |
+    - ça ne m'a pas fait rire
+    - pas drôle
+    - raconte-moi une autre blague
+    - essaie encore
+
+- intent: montre_plan_salle
+  examples: |
+    - Montre-moi le plan de la [Salle A](salle)
+    - Peux-tu afficher le plan pour la [Salle B](salle)?
+    - J'aimerais voir le plan de la [Salle C](salle)
+    - Plan de la [Salle D](salle), s'il te plaît
+
+- intent: demande_info_salle
+  examples: |
+    - Donne-moi des informations sur la [Salle B](salle)
+    - J'aimerais en savoir plus sur la [Salle C](salle)
+    - Quelles sont les caractéristiques de la [Salle D](salle)?
+    - Peux-tu me parler de la [Salle E](salle)?
+
+- intent: ou_est_salle
+  examples: |
+    - Où est la [Salle A](salle)?
+    - Comment trouver la [Salle F](salle)?
+    - Localisation de la [Salle G](salle)?
+
+- intent: demande_direction
+  examples: |
+    - Comment puis-je aller de la [Salle A](salle_depart) à la [Salle B](salle_arrivee)?
+    - Montre-moi le chemin de la [Salle C](salle_depart) à la [Salle D](salle_arrivee)
+    - Quel est le meilleur chemin de la [Salle E](salle_depart) pour aller à la [Salle F](salle_arrivee)?
+    - Peux-tu m'indiquer la route de la [Salle G](salle_depart) à la [Salle H](salle_arrivee)?
+    - Je suis perdu, peux-tu me guider de la [Salle I](salle_depart) à la [Salle J](salle_arrivee)?
+    - J'ai besoin d'instructions pour aller de la [Salle K](salle_depart) à la [Salle L](salle_arrivee)

@@ -1,0 +1,55 @@
+{
+    
+    "rooms": [
+        {
+            "name": "101",
+            "capacity": 30,
+            "availability": {
+                "2023-12-21T09:00": true,
+                "2023-12-21T10:00": true
+            },
+            "current_availability": true
+
+        },
+        {
+            "name": "Amphi Ada",
+            "capacity": 30,
+            "availability": {
+                "2023-12-21T09:00": true,
+                "2023-12-21T10:00": true
+            },
+            "current_availability": true
+
+        },
+        {
+            "name": "Amphi Blaise",
+            "capacity": 30,
+            "availability": {
+                "2023-12-21T09:00": true,
+                "2023-12-21T10:00": true
+            },
+            "current_availability": true
+
+        },
+        {
+            "name": "C21",
+            "capacity": 30,
+            "availability": {
+                "2023-12-21T09:00": true,
+                "2023-12-21T10:00": true
+            },
+            "current_availability": false
+
+        },
+        {
+            "name": "C122",
+            "capacity": 30,
+            "availability": {
+                "2023-12-21T09:00": true,
+                "2023-12-21T10:00": true
+            },
+            "current_availability": true
+        }
+    ]
+
+}

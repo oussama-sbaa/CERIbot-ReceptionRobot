@@ -1,0 +1,54 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "course_name": "Math",
+            "group": "A",
+            "teacher": "Mr. Smith",
+            "room": {
+                "name": "101",
+                "capacity": 30
+                
+            },
+            "time": "morning",
+            "formation": "informatique"
+        },
+        {
+            "id": 2,
+            "course_name": "Physics",
+            "group": "B",
+            "teacher": "Ms. Johnson",
+            "room": {
+                "name": "202",
+                "capacity": 25
+            },
+            "time": "afternoon",
+            "formation": "ia"
+        },
+        {
+            "id": 3,
+            "course_name": "History",
+            "group": "C",
+            "teacher": "Mr. Davis",
+            "room": {
+                "name": "303",
+                "capacity": 35
+            },
+            "time": "morning",
+            "formation": "reseaux"
+        },
+        {
+            "id": 4,
+            "course_name": "Biology",
+            "group": "D",
+            "teacher": "Ms. Parker",
+            "room": {
+                "name": "404",
+                "capacity": 28
+            },
+            "time": "afternoon",
+            "formation": ""
+        }
+    ]
+    
+}

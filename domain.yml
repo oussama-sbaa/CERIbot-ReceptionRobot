@@ -1,0 +1,105 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - donner_formation
+  - ask_room_availability
+  - ask_room_availability_date
+  - ask_weather
+  - tell_joke
+  - joke_not_funny
+  - demande_info_salle
+  - demande_direction
+  - montre_plan_salle
+  - ou_est_salle
+entities:
+  - formation
+  - room
+  - date
+  - times
+  - salle
+  - salle_depart
+  - salle_arrivee
+actions:
+ - action_get_formation
+ - action_check_room_availability
+ - action_check_room_availability_date
+ - action_weather
+ - action_tell_joke
+ - action_show_room_info
+ - action_show_directions
+ - action_show_salle_location
+ - action_show_room_plan
+ - action_set_salle_depart
+
+slots:
+  room:
+    type: text
+  time:
+    type: text
+  date:
+    type: text 
+  city:
+    type: text
+  times:
+    type: text
+  salle:
+    type: text
+  salle_depart:
+    type: text
+  salle_arrivee:
+    type: text
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_weather:
+  - text: "I am checking the weather for you."
+
+  utter_tell_joke:
+  - text: "Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent toujours dans le bateau."
+  - text: "Qu'est-ce qui est jaune et qui attend ? Jonathan."
+  - text: "Deux tomates traversent la rue, une des tomates se fait écraser, et l'autre dit 'Allez, ketchup !'"
+  - text: "Quel est le comble pour un électricien ? De ne pas être au courant."
+  - text: "Comment appelle-t-on un chat qui va dans l'espace ? Un chatellite."
+
+  utter_another_joke:
+  - text: "Hmm, je vois. Alors, que penses-tu de celle-ci : Pourquoi le livre de maths était triste ? Parce qu’il avait trop de problèmes."
+  - text: "D'accord, essayons celle-là : Que dit un oignon quand il se voit dans le miroir ? Oh, je me fais pleurer !"
+  - text: "Pas de souci, voici une autre : Pourquoi ne faut-il pas raconter de secrets sur un bateau ? Parce que les poissons pourraient entendre et c'est des vraies pipelettes !"
+  - text: "Allons-y avec une autre tentative : Quel est le comble pour un électricien ? Ne pas être au courant !"
+  - text: "Peut-être que celle-ci te fera sourire : Qu'est-ce qui est invisible et qui sent la carotte ? Le pet d'un lapin."
+  - text: "Une autre, pour la route : Pourquoi les plongeurs plongent-ils en arrière et non en avant ? Parce que sinon ils tombent dans le bateau."
+  - text: "Celle-ci pourrait te plaire : Que dit un fantôme quand il est heureux ? Bouuuuu-houuuu, je suis content !"
+  - text: "Et si on essayait celle-ci : Quelle est la fête préférée des chats ? Miaoû-ween !"
+  - text: "Allons, encore une chance : Pourquoi les vaches ferment-elles les yeux quand elles dorment ? Pour ne pas voir les cauchemars."
+  - text: "Que dirais-tu de celle-ci : Que fait un chat quand il entre dans une pharmacie ? Il demande du sirop pour chat-toux !"
+  - text: "Une dernière pour la route : Quel est le jeu préféré des poissons ? Saumon dit."
+  - text: "Espérons que celle-ci te fera rire : Pourquoi les kangourous détestent-ils les jours de pluie ? Parce que les enfants restent à l'intérieur de la poche toute la journée."
+  utter_demande_salle_depart:
+    - text: "De quelle salle partez-vous ?"
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

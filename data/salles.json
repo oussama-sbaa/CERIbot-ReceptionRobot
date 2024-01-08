@@ -1,0 +1,86 @@
+{
+    "salles": [
+        {
+            "nom": "Salle A",
+            "description": "Cette salle contient 50 personnes, equipee d'un projecteur, tableau blanc, WiFi. Localisation: Premier etage, a gauche de l'ascenseur.",
+            "plan": "plan1.jpg"
+        },
+        {
+            "nom": "Salle B",
+            "description": "Cette salle peut accueillir 30 personnes et dispose d'un TV, systeme audio, conference video. Localisation: Deuxieme etage, a droite de l'escalier.",
+            "plan": "plan2.jpg"
+        },
+        {
+            "nom": "Salle C",
+            "description": "Avec une capacite de 40 personnes, cette salle est equipee d'ordinateurs, tableau interactif. Elle se trouve au Troisieme etage, en face de l'ascenseur.",
+            "plan": "plan3.png"
+        },
+        {
+            "nom": "Salle D",
+            "description": "Cette salle, pouvant contenir 25 personnes, est equipee d'un projecteur et d'un systeme de videoconference. Localisation: Quatrieme etage, a gauche en sortant de l'ascenseur.",
+            "plan": "plan4.jpg"
+        }
+    ],
+    "directions": [
+        {
+            "de": "Salle A",
+            "vers": "Salle B",
+            "chemin": "Prenez l'ascenseur jusqu'au deuxieme etage, tournez a droite."
+        },
+        {
+            "de": "Salle A",
+            "vers": "Salle C",
+            "chemin": "Prenez l'ascenseur jusqu'au troisieme etage, la salle est en face de l'ascenseur."
+        },
+        {
+            "de": "Salle A",
+            "vers": "Salle D",
+            "chemin": "Prenez l'ascenseur jusqu'au quatrieme etage, tournez a gauche en sortant."
+        },
+        {
+            "de": "Salle B",
+            "vers": "Salle A",
+            "chemin": "Prenez l'ascenseur jusqu'au premier etage, tournez a gauche."
+        },
+        {
+            "de": "Salle B",
+            "vers": "Salle C",
+            "chemin": "Montez au troisieme etage par l'escalier, la salle est en face de l'ascenseur."
+        },
+        {
+            "de": "Salle B",
+            "vers": "Salle D",
+            "chemin": "Montez au quatrieme etage par l'escalier, tournez a gauche en sortant de l'escalier."
+        },
+        {
+            "de": "Salle C",
+            "vers": "Salle A",
+            "chemin": "Prenez l'ascenseur jusqu'au premier etage, la salle est a gauche de l'ascenseur."
+        },
+        {
+            "de": "Salle C",
+            "vers": "Salle B",
+            "chemin": "Descendez au deuxieme etage par l'escalier, la salle est a droite de l'escalier."
+        },
+        {
+            "de": "Salle C",
+            "vers": "Salle D",
+            "chemin": "Prenez l'ascenseur jusqu'au quatrieme etage, tournez a gauche en sortant."
+        },
+        {
+            "de": "Salle D",
+            "vers": "Salle A",
+            "chemin": "Prenez l'ascenseur jusqu'au premier etage, tournez a gauche en sortant."
+        },
+        {
+            "de": "Salle D",
+            "vers": "Salle B",
+            "chemin": "Descendez au deuxieme etage avec l'ascenseur, tournez a droite en sortant de l'ascenseur."
+        },
+        {
+            "de": "Salle D",
+            "vers": "Salle C",
+            "chemin": "Descendez au troisieme etage avec l'ascenseur, la salle est en face de l'ascenseur."
+        }
+    ]
+}

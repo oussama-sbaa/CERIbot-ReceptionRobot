@@ -1,0 +1,66 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Fetch course by formation
+  steps:
+    - intent: donner_formation
+    - action: action_get_formation
+
+- story: Check room availability
+  steps:
+    - intent: ask_room_availability
+    - action: action_check_room_availability
+
+- story: Check room availability date
+  steps:
+    - intent: ask_room_availability_date
+    - action: action_check_room_availability_date
+
+- story: weather request
+  steps:
+  - intent: ask_weather
+  - action: action_weather
+
+- story: raconter une blague
+  steps:
+    - intent: tell_joke
+    - action: utter_tell_joke
+- story: demande de direction
+  steps:
+  - intent: ou_est_salle
+  - action: action_show_salle_location
+  - action: utter_demande_salle_depart
+  - intent: demande_direction
+  - action: action_show_directions
+
+- story: montrer le plan d'une salle
+  steps:
+  - intent: montre_plan_salle
+  - action: action_show_room_plan
