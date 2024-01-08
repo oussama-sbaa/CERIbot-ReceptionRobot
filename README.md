@@ -13,9 +13,9 @@ CERIBot est une initiative visant à améliorer les interactions entre les humai
 ## Fonctionnalités et Développeurs
 - **Consultation de la Météo** : Permet aux utilisateurs de consulter les prévisions météorologiques actuelles (Développeur : Oussama SBAA).
 - **Diffusion de Blagues Humoristiques** : Offre une interaction amicale avec le robot qui peut raconter des blagues (Développeur : Oussama SBAA).
-- **Récupération des Données sur l'Emploi du Temps** : Affiche les horaires des cours et la disponibilité des salles (Développeur : Wadii Didah).
-- **Disponibilité des Salles selon Date, Heure et Cours** : Recherche de salles disponibles en fonction de paramètres spécifiques (Développeur : Wadii Didah).
-- **Orientation dans le Bâtiment avec Affichage des Salles et Plans d’Accès** : Aide à la navigation dans les bâtiments éducatifs (Développeur : Ali Mtahri).
+- **Récupération des Données sur l'Emploi du Temps** : Affiche les horaires des cours et la disponibilité des salles (Développeur : Wadii DIDAH).
+- **Disponibilité des Salles selon Date, Heure et Cours** : Recherche de salles disponibles en fonction de paramètres spécifiques (Développeur : Wadii DIDAH).
+- **Orientation dans le Bâtiment avec Affichage des Salles et Plans d’Accès** : Aide à la navigation dans les bâtiments éducatifs (Développeur : Ali MTAHRI).
 
 ## Auteurs
 Ce projet a été développé par Oussama SBAA, Wadii DIDAH, et Ali MTAHRI.
