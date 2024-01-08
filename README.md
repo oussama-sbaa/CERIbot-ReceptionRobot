@@ -18,4 +18,4 @@ CERIBot est une initiative visant à améliorer les interactions entre les humai
 - **Orientation dans le Bâtiment avec Affichage des Salles et Plans d’Accès** : Aide à la navigation dans les bâtiments éducatifs (Développeur : Ali MTAHRI).
 
 ## Auteurs
-Ce projet a été développé par Oussama SBAA, Wadii DIDAH, et Ali MTAHRI.
+Ce projet a été développé par **Oussama SBAA**, **Wadii DIDAH**, et **Ali MTAHRI**.
